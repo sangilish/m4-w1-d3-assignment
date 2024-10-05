@@ -43,18 +43,15 @@ h2 {
   max-width: calc(25% - 20px);
   text-align: center;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
-  border-radius: 10px;
   padding: 10px;
   overflow: hidden;
 }
 
 .food-item img {
   width: 100%;
-  height: 0;
-  padding-bottom: 100%; /* Makes it a square based on the width */
-  object-fit: cover; /* Ensures the image covers the square without distorting */
-  border-radius: 8px;
+  height: 250px; /* Fixed square height */
+  object-fit: cover; /* Centers the image and crops it */
+  border: none; /* Removes any border or shadow */
 }
 
 .food-item h3 {
@@ -64,7 +61,7 @@ h2 {
 
 .food-item p {
   font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.24);
+  color: rgba(0, 0, 0, 0.5); /* Slight color adjustment for better readability */
 }
 
 .food-item button {
