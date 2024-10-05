@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter:400,400italic,700');
-
-// Colors
-$white: rgb(255, 255, 255);
-$black: rgb(0, 0, 0);
-$black-transparent-24: rgba(0, 0, 0, 0.24);
-$mid-blue: rgb(58, 96, 115);
-
-// Fonts
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,400italic,700");
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +7,7 @@ $mid-blue: rgb(58, 96, 115);
 }
 
 body {
-  background-color: $white;
+  background-color: rgb(255, 255, 255);
 }
 
 .main-wrapper {
@@ -26,8 +18,8 @@ body {
 
 .header {
   text-align: center;
-  background: linear-gradient(to bottom, $mid-blue, $black-transparent-24);
-  color: $white;
+  background: linear-gradient(to bottom, rgb(58, 96, 115), rgba(0, 0, 0, 0.24));
+  color: rgb(255, 255, 255);
   padding: 20px;
 }
 
@@ -47,11 +39,11 @@ h2 {
 }
 
 .food-item {
-  flex: 1 1 calc(25% - 20px); // Responsive, 4 items per row
+  flex: 1 1 calc(25% - 20px);
   max-width: calc(25% - 20px);
   text-align: center;
-  background-color: $white;
-  box-shadow: 0 4px 8px $black-transparent-24;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
   border-radius: 10px;
   padding: 10px;
   overflow: hidden;
@@ -70,12 +62,12 @@ h2 {
 
 .food-item p {
   font-size: 0.9em;
-  color: $black-transparent-24;
+  color: rgba(0, 0, 0, 0.24);
 }
 
 .food-item button {
-  background-color: $mid-blue;
-  color: $white;
+  background-color: rgb(58, 96, 115);
+  color: rgb(255, 255, 255);
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -84,5 +76,7 @@ h2 {
 }
 
 .food-item button:hover {
-  background-color: darken($mid-blue, 10%);
+  background-color: rgb(40.901734104, 67.6994219653, 81.098265896);
 }
+
+/*# sourceMappingURL=styles.css.map */
